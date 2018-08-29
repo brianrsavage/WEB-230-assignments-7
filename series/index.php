@@ -1,4 +1,3 @@
 <?php
- phpinfo ();
+  echo '<strong>Hello World.</strong';
 ?>
-
