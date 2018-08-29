@@ -1,0 +1,24 @@
+WEB-230 | How PHP Works – Server Side Scripting – Assignment
+Explain the following:
+
+Identify and explain the differences between server side and client side.
+  Server side finds the information that is requested and sends it to the client side. Client side requests information 
+  and sends it to the server.
+
+Identify and explain the differences between scripting and programming languages.
+  Scripting languages do not require the compilation step and are rather interpreted. Scripts control other programs. Programming language is designed to enable 
+  programmers to communicate instructions to a computer. Programming languages can be used to create programs. 
+
+
+Explain what type of language PHP is.
+  PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language.
+
+
+Explain the process of a request from client to server and back to client.
+  If a client is looking for a file, they can just typee in the file name and the server locates the file and brings it to the client.
+
+
+Explain the differences between the different post types discussed in the video.
+  Posts requests are never cached, don't remain in history, can't be bookmarked, and no restrictions to data length.
+  Get can be cached, be in history, and be bookmarked. Also, shouldn't be used with sensative data, has restriction length, and
+  only be used to retrieve data.
