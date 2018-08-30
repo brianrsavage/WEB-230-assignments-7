@@ -1,3 +1,3 @@
 <?php
-   print '<strong>Hello World.</strong';
+echo '<input type="text name="name">';
 ?>
