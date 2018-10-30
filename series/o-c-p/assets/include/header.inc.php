@@ -1,31 +1,36 @@
 <?php
 
- $siteName = 'Insights | Communications Portal';
+include_once('include/config.inc.php');
+include_once('include/functions.inc.php');
+include_once('include/menu.data.php');
+  if(isset($pageTitle)){
+	  $pageTitle = $companyName;
+    }else{
+	  $pageTitle = $companyName.'-'.$pageTitle;
+  }
+  echo '<!DOCTYPE html>';
+  echo '<html lang="en">';
+  echo      '<head>';
+  echo           '<meta charset="UTF-8">';
+  echo           '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+  echo           '<meta http-equiv="X-UA-Compatible" content="ie=edge">';
+  echo           '<title>'.$pageTitle.'</title>';
+  echo           '<link rel="stylesheet" type="text/css" href="assets/css/style.css">';
+  echo      '</head>';
+  echo      '<body>';
+  echo           '<header>';
 
-?>
+  echo               '<h1>'.$pageTitle.'</h1>';
+  echo               '<h2>On going Training</h2>';
+  echo '<nav>';
+        menuBuilder( $menuItems );
+  echo '</nav>';
+  echo '</header>';
+  echo '</body>';
 
-<!doctype html>
-    <?php
-       ?>
-<html>
-    
-<head>
+ ?>
+  
 
-  <meta charset="utf-8">
-    
-  <title><?php echo $siteName; ?></title>
-  	
- <meta name="description" content="" />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   <script>
-		var siteName = '<?php echo $siteName; ?>';
-   </script>
-</head>
- 
-<body>
 
-<header>
-    <h1><a href="index.php"><?php echo $siteName; ?></a></h1>
-    <h2>our connections to our colleagues</h2>
-</header>
+

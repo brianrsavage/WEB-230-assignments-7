@@ -1,10 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php
 
-<body>
-</body>
-</html>
+ini_set ('error_reporting', E_ALL);
+
+$companyName = 'Insights';
+
+$pageTitle = $companyName.' | Communications Portal';
+
+?>

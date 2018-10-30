@@ -1,5 +1,8 @@
-<footer>
-    <div id="footerTagLine">Copyright &copy; 2018 Insights</div>
-  </footer>
- </body>
-</html>
+<?php
+
+	echo "</section>";
+    echo '<footer><div class="copy">Copyright &copy; '.date("Y").' '.$companyName.'</div></footer>';
+
+    echo '</body></html>';
+
+?>		
