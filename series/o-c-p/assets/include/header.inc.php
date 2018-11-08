@@ -1,8 +1,8 @@
 <?php
 
-include_once('include/config.inc.php');
-include_once('include/functions.inc.php');
-include_once('include/menu.data.php');
+require_once('include/config.inc.php');
+require_once('include/functions.inc.php');
+require_once('include/menu.data.php');
   if(isset($pageTitle)){
 	  $pageTitle = $companyName;
     }else{

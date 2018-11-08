@@ -1,17 +1,18 @@
-<<?php
-
-  $pageTitle = 'Internal Communications';
-     include_once('include/config.inc.php');
-     require_once('include/header.inc.php');
+<?php
+$pageTitle = 'Internal Communications';
+include_once('include/header.inc.php');
 
   $offset = 0;
-  $search = 'Acme';
-  $replace = 'Insights';
+
 
   if(isset($_POST['text'])){
-	  $text = $POST['text'];
-   $search_length = strlen($search);
-    
+
+    $text = $_POST['text'];
+    $search = 'Acme';
+    $replace = 'Insights';
+
+    $search_length = strlen($search);
+
       if(!empty($text)){
 
         while ($strpos = strpos($text, $search, $offset)) {
@@ -23,11 +24,17 @@
           $text = substr_replace($text, $replace, $strpos, $search_length);
 
         }
- 
+
+      } else {
+
+        echo 'Please fill in the text fields.';
+
+      }
+
   }else{
-     echo 'Please fill in the text fields.'; 
-   }
+    $text = 'please enter your communication here.';
   }
+
 ?>
 
 <form action="internal-communications.php" method="POST">
@@ -40,6 +47,6 @@
 
 <?php
 
-  require_once('include/footer.inc.php');
+  include_once('include/footer.inc.php');
 
 ?>

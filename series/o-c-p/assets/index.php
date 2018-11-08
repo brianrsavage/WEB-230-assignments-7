@@ -6,9 +6,12 @@
 
   include_once('include/header.inc.php');
     echo '<div>';
-		echo '<strong>'.'Welcome to our home page.'.'</strong>';	
+		 '<h1>'.'Welcome to our home page.'.'</h1>';	
 	echo '</div>';
-	
+?>	
+
+<?php
+
 	include_once('include/footer.inc.php');
 	
 ?>			

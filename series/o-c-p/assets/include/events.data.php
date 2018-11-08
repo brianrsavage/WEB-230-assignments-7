@@ -1,10 +1,10 @@
 <?php
 
-  include_once('include/config.inc.php');
+  include_once('include/events.data.php');
 
   $pageTitle = "Events";
 
-  require_once('include/header.inc.php');
+  include_once('include/header.inc.php');
 
   $events = array(
       array('Blue Jeans Day','October 12, 2018','All employees may wear jeans to work.'),
@@ -28,5 +28,5 @@
 ?>
 
 <?php
-   require_once('include/footer.inc.php');
+   include_once('include/footer.inc.php');
 ?>
